@@ -1,0 +1,62 @@
+﻿
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+<link rel="stylesheet" href="~/css-validate/screen.css">
+
+<div id="divCarregando" class="progresso">
+    <img src="~/images/loader.gif" class="centro-image" />
+</div>
+
+<div class="col-md-12">
+
+    <div class="card card-success">
+
+        <div class="card-header">
+            <h3 class="card-title">Insira as Informações do Professor</h3>
+        </div>
+
+        <div class="card-body">
+
+            <form id="frmCadastraProfessor" role="form">
+
+                <div class="row"><br /></div>
+                <div class="row"><br /></div>
+
+                <div class="row">
+
+                    <div class="col-sm-3">
+                        <!-- text input -->
+                        <div class="form-group">
+                            <label>Nome</label>
+                            <input type="text" class="form-control" name="inputNome" id="inputNome" placeholder="Nome ...">
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="form-group">
+                            <label>&nbsp;</label>
+                            <button type="button" id="btnCadastrar" class="btn btn-block bg-gradient-primary">Cadastrar</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row"><br /></div>
+                <div class="row"><br /></div>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</div>
+
+@section Scripts {
+    <script src="~/lib/jquery-validation/dist/jquery.validate.js" type="text/javascript"></script>
+    <script src="~/js/ProfessorCreate.js"></script>
+}
